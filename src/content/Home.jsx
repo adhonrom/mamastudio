@@ -5,6 +5,7 @@ import OwlCarousel from "react-owl-carousel2";
 import "react-owl-carousel2/lib/styles.css";
 
 import Slider from "react-slick";
+import { relative } from "path";
 
 class Home extends Component {
   constructor(props) {
@@ -171,7 +172,7 @@ class Home extends Component {
         {/* Testimony start */}
         <Container
           style={{
-            marginTop: 60,
+            marginTop: 80,
             height: "450px"
           }}
         >
@@ -262,8 +263,78 @@ class Home extends Component {
         </Container>
         {/* Testimony end */}
 
+        {/* Our teachers start */}
+        <Container
+          fixed
+          style={{
+            width: "90%",
+            paddingTop: 20,
+            height: "600px",
+            borderRadius: "25px"
+          }}
+        >
+          <Typography
+            component="h3"
+            variant="h4"
+            style={{ marginBottom: 10, fontWeight: 700, textAlign: "center" }}
+          >
+            Our Teachers
+          </Typography>
+          <Typography
+            component="h1"
+            align="center"
+            variant="h3"
+            style={{ textAlign: "center", color: "#EC9120" }}
+          >
+            Experts Advisors
+          </Typography>
+          <Container fixed style={{ marginTop: 20, height: "500px" }}>
+            <Container
+              style={{
+                display: "flex",
+                borderRadius: "25px",
+                padding: 20,
+                marginTop: 20,
+                height: "450px"
+              }}
+            >
+              <Container style={{marginLeft: "30px", position: "relative"}}>
+                <Container style={{backgroundColor: "#F1F0FF", position: "absolute", bottom:0, right:0, borderRadius: "25px", height: "80%", width: "80%"}}>
+                  <Container style={{position: "absolute", bottom:0, right:0, borderRadius: "25px", height: "50%", width: "100%"}}>
+                    <Typography variant="h4" style={{marginBottom: "20px"}}>Beatriz Brito</Typography>
+                    <Typography variant="h5">Science</Typography>
+                  </Container>
+                </Container>
+                < img src={require("../images/republika.jpg")} alt="slider-image"
+              style={{backgroundColor: "blue", position: "absolute", top:0, left:30, height: "55%", width: "70%", borderRadius: "50%"}}/>
+              </Container>
+              <Container style={{marginLeft: "30px", position: "relative"}}>
+                <Container style={{backgroundColor: "#F1F0FF", position: "absolute", bottom:0, right:0, borderRadius: "25px", height: "80%", width: "80%"}}>
+                  <Container style={{position: "absolute", bottom:0, right:0, borderRadius: "25px", height: "50%", width: "100%"}}>
+                    <Typography variant="h4" style={{marginBottom: "20px"}}>Jafaris Long</Typography>
+                    <Typography variant="h5">Science</Typography>
+                  </Container>
+                </Container>
+                < img src={require("../images/republika.jpg")} alt="slider-image"
+              style={{backgroundColor: "blue", position: "absolute", top:0, left:30, height: "55%", width: "70%", borderRadius: "50%"}}/>
+              </Container>
+              <Container style={{marginLeft: "30px", position: "relative"}}>
+                <Container style={{backgroundColor: "#F1F0FF", position: "absolute", bottom:0, right:0, borderRadius: "25px", height: "80%", width: "80%"}}>
+                  <Container style={{position: "absolute", bottom:0, right:0, borderRadius: "25px", height: "50%", width: "100%"}}>
+                    <Typography variant="h4" style={{marginBottom: "20px"}}>Palo Camber</Typography>
+                    <Typography variant="h5">Science</Typography>
+                  </Container>
+                </Container>
+                < img src={require("../images/republika.jpg")} alt="slider-image"
+              style={{backgroundColor: "blue", position: "absolute", top:0, left:30, height: "55%", width: "70%", borderRadius: "50%"}}/>
+              </Container>
+            </Container>
+          </Container>
+        </Container>
+        {/* Our teachers end */}
+
         {/* Karya murid start */}
-        <Container fixed style={{ marginTop: 20 }}>
+        <Container fixed style={{ marginTop: 40 }}>
           <Typography
             component="h1"
             align="center"
