@@ -17,6 +17,7 @@ class Blog extends Component {
         <h1>Hellow</h1>
         <h1>Hellow</h1>
         <h1>Hellow</h1>
+        <h1>hellow lagi</h1>
       </div>
     );
   }
